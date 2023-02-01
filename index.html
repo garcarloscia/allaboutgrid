@@ -5,75 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All about grid</title>
-    <style>
-      @font-face {
-        font-family: 'Roboto';
-        src: url('roboto.eot'); /* IE9 Compat Modes */
-        src: url('roboto.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('roboto.woff') format('woff'), /* Modern Browsers */
-        url('roboto.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('roboto.svg#svgFontName') format('svg'); /* Legacy iOS */
-      }
-      /* use the font */
-      body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 17px;
-      }
-      html, body {
-        margin:0;
-        height: 100%
+    <link rel="stylesheet" href="styles.css">
 
-      }
-      .container {
-        display: grid;
-        grid-template-columns: 300px auto;
-        grid-template-rows: 50px auto;
-        height: 100%;
-        align-items: stretch;
-      }
-      main {
-        background-color: #e2e8f0;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;  
-      }
-      nav {
-        background-color: #1992d4;
-        grid-row-start: 1;
-        grid-row-end: 3;
-        padding: 1rem;
-        font-size: 22px;
-        color: white;
-        font-weight: 600;
-
-        display:grid;
-        grid-template-columns: 60px auto;
-        grid-template-rows: repeat(12, 3rem);
-        align-items: center;
-      }
-
-
-      svg {
-        fill:white;
-        width: 22px;
-        height: 22px;
-        justify-self: center;
-
-      }
-      svg:hover {
-        fill: red;
-      }
-      .icon_nav_1 {
-        width: 40px;
-        height: 40px;
-      }
-      #nav_font{
-        font-size: 28px;
-      }
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem; */
-    </style>
 </head>
 <body>
   <div class="container">
@@ -103,8 +36,8 @@
 
         <div></div><div></div>
 
-       
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Settings</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Settings</title><path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" /></svg>
         <p>Settings</p>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Support</title><path d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" /></svg>        
@@ -118,7 +51,24 @@
       header
     </header>
     <main>
-      main
+      <div id="mainmain">
+        <h2>Your proyects</h2>
+        <div id="articles">
+          <article>1</article>
+          <article>2</article>
+          <article>3</article>
+          <article>4</article>
+          <article>5</article>
+          <article>6</article>
+        </div>
+      </div>
+
+      <div id="mainside">
+        <h2>Announcements</h2>
+        <section id="anuncios">seccion</section>
+        <h2>Tending</h2>
+        <section id="trendig">seccion</section>
+      </div>
     </main>
   </div>
 </body>
